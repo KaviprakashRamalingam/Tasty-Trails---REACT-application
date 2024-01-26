@@ -1,71 +1,37 @@
-# Tasty Trails: A Community Food Sharing Platform
+# Tasty Trails: Steps to execute the project
 
-## Project Overview
+## Clone the repository
 
-Welcome to Tasty Trails, a purpose-driven web application designed to foster community collaboration and reduce food waste. Tasty Trails provides a platform for users to share information about surplus food, creating a better environment where everyone can contribute to minimizing food wastage. 
+To execute the project clone this repository to your loacal path. 
+Use any IDE that you are comfortable with. Here I am using VS code.
 
-For users, Tasty Trails means more than just access to surplus food; it's an opportunity to discover and enjoy delicious meals while promoting sustainability in the community. Our primary goal is to target those in need, ensuring that both food providers and recipients find mutual benefit through this platform. By connecting surplus food providers with those facing food insecurity, Tasty Trails strives to create a space where every shared meal makes a meaningful impact on individuals and communities.
+## Run some Linux commands
 
-## Key Features
+- Run the command "npm install" to fetch relevant node modules and other dependencies.
+- Change the path and navigate to tasty-trails-server and tasty-trails-client folders and run "npm install".
 
-### 🌱 **Surplus Food Management**
+## Setup MONGO DB
 
-- **Create, Read, Update, Delete (CRUD) Operations:**
-  Users can seamlessly create, browse, edit, and delete posts about surplus food items.
+- Open MONGO DB in browser and log in to the database.
+- Install MONGO compass to facilitate the DB operations.
+- Get the link to connect via compass in the MONGO browser page
+- Check if the username and password is replaced correctly in it.
+  Eg: mongodb+srv://ramalingamka:*****@webdevcluster.3umo3.mongodb.net/
+- Connect in MONGO compass and create a database "tasty-trails"
+  
+## Connect to Server
 
-### 🗺️ **Intuitive User Experience**
+- Change the directory to "tasty-trails-server"
+  cd tasty-trails-server
+- Run "npm start"
+- Ensure that you get the message "Server is listening at port 8080" in the console.
 
-- **Multiple UI Routes:**
-  Tasty Trails offers efficient routing for separate pages like the home feed, community feed, user profile, and detailed post views.
+## Run the Client
 
-- **Redux State Management:**
-  A smooth and responsive user interface is ensured through Redux, efficiently managing application state for users.
+- Change the directory to "tasty-trails-client"
+  cd tasty-trails-client 
+- Run "npm start"
+- This will open the Tasty trails page in your browser.
 
-- **Internationalization:**
-  Tasty Trails speaks your language! Enjoy the application in multiple languages for a global, inclusive experience.
 
-### 🍽️ **Professional UI Design**
-
-- **Clean and User-Friendly Interface:**
-  Tasty Trails boasts a professional and inviting design, promoting easy navigation and an enjoyable user experience.
-
-### 🚀 **Robust Backend Infrastructure**
-
-- **RESTful API Backend:**
-  The backend, powered by Node.js and MongoDB, delivers seamless CRUD operations, ensuring efficient data management.
-
-- **Domain Driven Design:**
-  Organized backend code follows domain-driven design principles, enhancing maintainability and scalability.
-
-### 🌐 **Community Engagement**
-
-- **Comment Section for Each Post:**
-  Encourage community interaction through dedicated comment sections for each post, fostering a sense of shared responsibility.
-
-### 🎉 **Additional Features**
-
-- **Search Functionality:**
-  Easily find specific food items or explore posts.
-
-- **User Authentication:**
-  Secure your account and personalize your Tasty Trails experience with user authentication.
-
-## Object Model Diagram
-<img src="assets/tastytrails.svg">
-
-## Tech Stack
-
-- **Frontend (UI):**
-  - SCSS
-  - React
-  - Node.js
-  - Typescript
-  - Redux
-  - Internationalization (i18n)
-
-- **Backend:**
-  - Node.js
-  - Express.js
-  - MongoDB
-
-Let's create a world where every meal shared is a step towards a more sustainable future! 🌍🍲
+### Tasty trails is up and running enjoy to explore your trails. 🌍🍲
