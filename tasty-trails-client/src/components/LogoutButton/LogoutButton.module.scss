@@ -1,0 +1,44 @@
+@import "../../scss/base/variables";
+@import "../../scss/mixins";
+@import "../../scss/base/globals";
+@import "../../scss/functions";
+
+.logout {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    margin: 25px 0;
+    width: fit-content;
+    padding: 15px;
+
+    &:hover {
+        border-radius: 50px;
+        background-color: $tertiary-color;
+    }
+
+    .logoutIcon {
+        margin-right: 15px;
+        width: 40px;
+    }
+    
+    .logoutButton {
+        font-weight: set-weight(medium);
+        font-size: 1.3rem;
+        border: none;
+        background: none;
+    }
+}
+
+@media screen and (max-width: $tablet-width) {
+    .logout {
+
+        .logoutIcon {
+            width: 30px;
+        }
+
+        .logoutButton {
+            font-size: 1rem;
+        }
+    }
+}
