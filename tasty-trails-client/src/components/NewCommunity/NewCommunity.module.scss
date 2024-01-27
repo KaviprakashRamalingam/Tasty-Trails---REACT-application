@@ -1,0 +1,136 @@
+@import "../../scss/base/variables";
+@import "../../scss/mixins";
+@import "../../scss/base/globals";
+@import "../../scss/functions";
+
+.coverImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../../public/assets/community-cover.jpg");
+    background-position: 10% 60%;
+
+    .form {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-40%, -50%);
+        padding: 30px 80px;
+        border-radius: 40px;
+        width: 35vw;
+        background-color: $secondary-color;
+
+        .heading {
+            text-align: center;
+            color: $primary-color;
+            font-size: 1.6rem;
+            margin: 10px 0 30px 0;
+        }
+
+        .inputContainer {
+            @include flexbox(flex, column);
+            margin: 20px 0;
+            width: 100%;
+
+            .inputLabel {
+                font-weight: set-weight(medium);
+                margin-bottom: 7px;
+            }
+            
+            .input {
+                padding: 12px 6px;
+                border: none;
+                border-radius: 5px;
+            
+                &::placeholder {
+                    color: $primary-color;
+                }
+            }
+
+            .imagePreview {
+                border-radius: 50%;
+                border: none;
+                width: 150px;
+                height: 150px;
+                display: inline-block;
+            
+                &:hover {
+                    opacity: 0.85;
+                }
+            }
+            
+            .errorMessage {
+                font-size: 0.9rem;
+                color: $accent-color;
+                margin-top: 5px;
+            }
+            
+            .fileUploadButton {
+                font-size: 0.9rem;
+                background-color: #fff;
+                border-radius: 50%;
+                border: none;
+                width: 150px;
+                height: 150px;
+                margin: 0 auto;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+
+            .textarea {
+                padding: 12px 6px;
+                border: none;
+                border-radius: 5px;
+                min-width: 100%;
+                max-width: 100%;
+                min-height: 150px;
+                max-height: 150px;
+            
+                &::placeholder {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .createButton {
+            @extend .button-primary;
+            font-weight: set-weight(medium);
+            width: 100%;
+            border-radius: 25px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: $mobile-width) and (max-width: $tablet-width) {
+    .coverImage {
+        margin-top: 60vh;
+
+        .form {
+            width: 70vw;
+            margin: 55vh auto 0 auto;
+            left: 15%;
+            top: 10%;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-width){
+    .coverImage {
+        margin-top: 50vh;
+
+        .form {
+            width: 70vw;
+            margin: 50vh auto 0 auto;
+            left: 15%;
+            top: 10%;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+}
