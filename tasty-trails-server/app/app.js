@@ -24,7 +24,7 @@ const initialize = async (app) => {
     app.use(passport.initialize());
     //app.use(passport.session());
     // Connect to the MongoDB database using Mongoose
-    mongoose.connect("mongodb+srv://ramachandranshr:HEyzsgy2j0dkTkWi@mongoatlas1.rnu9y.mongodb.net/tasteyTrialsDB?retryWrites=true&w=majority");
+    mongoose.connect("mongodb+srv://<username>>:*****@mongoatlas1.rnu9y.mongodb.net/tasteyTrialsDB?retryWrites=true&w=majority");
     registerRouter(app); // Register routes for the application
 }
 
