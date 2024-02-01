@@ -1,0 +1,27 @@
+/* Global Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    border-radius: 5px;
+    font-size: 1.02rem;
+    font-weight: set-weight(semi-bold);
+    padding: 14px 35px;
+
+    &:hover {
+        @include button-hover-effect;
+    }
+}
